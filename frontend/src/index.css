@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --color-amalfi: #1B2A4A;
+  --color-citrus: #F5A623;
+  --color-breeze: #A8C0D6;
+  --color-cream:  #F9F9F7;
+}
+
+@theme inline {
+  --color-amalfi: #1B2A4A;
+  --color-citrus: #F5A623;
+  --color-breeze: #A8C0D6;
+  --color-cream:  #F9F9F7;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
