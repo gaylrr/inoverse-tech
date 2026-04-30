@@ -152,7 +152,7 @@ Get all soft-deleted (archived) services.
     {
       "id": 3,
       "title": "Old Service",
-      "deleted_at": "2025-06-01T10:00:00.000Z"
+      "deleted_at": "2026-06-01T10:00:00.000Z"
     }
   ]
 }
@@ -303,8 +303,8 @@ Get all **active** projects for the public portfolio page.
       "project_url": "https://example.com",
       "order_index": 1,
       "is_active": true,
-      "created_at": "2025-01-01T00:00:00.000Z",
-      "updated_at": "2025-01-01T00:00:00.000Z"
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-01-01T00:00:00.000Z"
     }
   ]
 }
@@ -486,7 +486,7 @@ Get all contact form submissions.
       "email": "juan@example.com",
       "message": "Hi, I want to inquire about your services.",
       "is_read": false,
-      "created_at": "2025-06-01T10:00:00.000Z"
+      "created_at": "2026-06-01T10:00:00.000Z"
     }
   ]
 }
@@ -571,7 +571,7 @@ Get all content entries across all pages (for admin panel).
       "page": "home",
       "section": "hero_title",
       "value": "Building Smart Software Solutions",
-      "updated_at": "2025-06-01T10:00:00.000Z"
+      "updated_at": "2026-06-01T10:00:00.000Z"
     }
   ]
 }

@@ -5,12 +5,12 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const links = [
-    { to: '/',             label: 'Home' },
-    { to: '/about',        label: 'About' },
-    { to: '/services',     label: 'Services' },
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/services', label: 'Services' },
     { to: '/technologies', label: 'Technologies' },
-    { to: '/portfolio',    label: 'Portfolio' },
-    { to: '/contact',      label: 'Contact' },
+    { to: '/portfolio', label: 'Portfolio' },
+    { to: '/contact', label: 'Contact' },
   ]
 
   return (
@@ -19,13 +19,25 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-citrus flex items-center justify-center font-bold text-white text-sm">
-            IT
-          </div>
+          
+            <div
+              className="px-4 py-2 rounded-2xl bg-white"
+              style={{
+                boxShadow: '0 4px 6px -1px rgba(0,0,0,0.3), 0 8px 24px rgba(255,166,43,0.25), 0 -1px 0 rgba(255,255,255,0.8) inset',
+                border: '1px solid rgba(255,255,255,0.9)',
+              }}
+            >
+              <img
+                src="/logo.png"
+                alt="Inoverse Technologies"
+                className="h-9 w-auto object-contain drop-shadow-sm"
+              />
+            </div>
+          </Link>
           <span className="text-white font-bold text-lg">
             Inoverse <span className="text-citrus">Technologies</span>
           </span>
-        </Link>
+        
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">

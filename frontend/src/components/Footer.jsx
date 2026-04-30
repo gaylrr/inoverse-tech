@@ -11,9 +11,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-citrus flex items-center justify-center font-bold text-white text-sm">
-                IT
-              </div>
+              <img
+                src="/logo.png"
+                alt="Inoverse Technologies"
+                className="h-10 w-auto object-contain"
+              />
               <span className="font-bold text-lg">
                 Inoverse <span className="text-citrus">Technologies</span>
               </span>
@@ -30,12 +32,12 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2">
               {[
-                { name: 'Home',         path: '/' },
-                { name: 'About',        path: '/about' },
-                { name: 'Services',     path: '/services' },
+                { name: 'Home', path: '/' },
+                { name: 'About', path: '/about' },
+                { name: 'Services', path: '/services' },
                 { name: 'Technologies', path: '/technologies' },
-                { name: 'Portfolio',    path: '/portfolio' },
-                { name: 'Contact',      path: '/contact' },
+                { name: 'Portfolio', path: '/portfolio' },
+                { name: 'Contact', path: '/contact' },
               ].map((link) => (
                 <li key={link.path}>
                   <Link

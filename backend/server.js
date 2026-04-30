@@ -1,5 +1,5 @@
-require('dotenv').config();
 const express  = require('express');
+require('dotenv').config();
 const cors     = require('cors');
 const path     = require('path');
 const { sequelize, testConnection } = require('./config/db');
@@ -16,6 +16,7 @@ app.use('/api/projects', require('./routes/projects'));
 app.use('/api/contact',  require('./routes/contact'));
 app.use('/api/content',  require('./routes/content'));
 app.use('/api/upload', require('./routes/upload'));
+app.use('/api/technologies', require('./routes/technologies'));
 
 // Health check
 app.get('/', (req, res) => {

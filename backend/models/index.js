@@ -55,4 +55,16 @@ const Content = sequelize.define('Content', {
   updated_at: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
 }, { tableName: 'content', timestamps: false });
 
-module.exports = { sequelize, User, Message, Service, Project, Content };
+const Technology = sequelize.define('Technology', {
+  id:          { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+  name:        { type: DataTypes.STRING(100), allowNull: false },
+  category:    { type: DataTypes.STRING(100), allowNull: false },
+  description: { type: DataTypes.TEXT, allowNull: true },
+  image_url:   { type: DataTypes.STRING(255), allowNull: true },
+  order_index: { type: DataTypes.INTEGER, defaultValue: 0 },
+  is_active:   { type: DataTypes.BOOLEAN, defaultValue: true },
+  created_at:  { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
+  updated_at:  { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
+}, { tableName: 'technologies', timestamps: false });
+
+module.exports = { sequelize, User, Message, Service, Project, Content, Technology };

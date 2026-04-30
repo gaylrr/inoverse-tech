@@ -1,9 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+
 // Layouts
 import MainLayout  from './layouts/MainLayout'
 import AdminLayout from './layouts/AdminLayout'
 import AdminArchive from './admin/AdminArchive'
+import AdminTechnologies from './admin/AdminTechnologies'
+
 
 
 // Public pages
@@ -25,10 +28,12 @@ import AdminContent  from './admin/AdminContent'
 
 // Route guard
 import ProtectedRoute from './routes/ProtectedRoute'
+import ScrollUp from './components/ScrollUp'
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollUp />
       <Routes>
 
         {/* Public website */}
@@ -57,6 +62,7 @@ export default function App() {
           <Route path="messages"  element={<AdminMessages />} />
           <Route path="content"   element={<AdminContent />} />
           <Route path="archive" element={<AdminArchive />} />
+          <Route path="technologies" element={<AdminTechnologies />} />
         </Route>
 
       </Routes>

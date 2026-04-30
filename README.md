@@ -365,11 +365,11 @@ Password: Admin@1234
 
 **Inoverse Technologies**
 - Email: inovers.dev@gmail.com
-- Location: Urdaneta City, Pangasinan, PH
+
 
 ---
 
 ## 📄 License
 
 This project was developed as a final project for On-the-job Training.
-All rights reserved © 2025 Inoverse Technologies.
+All rights reserved © 2026 Inoverse Technologies.

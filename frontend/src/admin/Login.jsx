@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import axiosInstance from '../api/axiosInstance'
 
 export default function Login() {
-  const [form, setForm]     = useState({ email: '', password: '' })
-  const [error, setError]   = useState('')
+  const [form, setForm] = useState({ email: '', password: '' })
+  const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
@@ -24,13 +24,16 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4" style={{fontFamily: "'Plus Jakarta Sans', sans-serif"}}>
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <div className="w-full max-w-md">
 
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-2xl bg-amalfi flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">IT</div>
-          <h1 className="text-2xl font-bold text-amalfi">Inoverse <span className="text-citrus">CMS</span></h1>
+          <img
+            src="/logo.png"
+            alt="Inoverse Technologies"
+            className="h-16 w-auto object-contain mx-auto mb-4"
+          />          <h1 className="text-2xl font-bold text-amalfi">Inoverse <span className="text-citrus">CMS</span></h1>
           <p className="text-gray-500 text-sm mt-1">Sign in to manage your website</p>
         </div>
 
@@ -49,7 +52,7 @@ export default function Login() {
               <input
                 type="email"
                 value={form.email}
-                onChange={e => setForm({...form, email: e.target.value})}
+                onChange={e => setForm({ ...form, email: e.target.value })}
                 placeholder="admin@inoverse.com"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-amalfi transition"
                 required
@@ -61,7 +64,7 @@ export default function Login() {
               <input
                 type="password"
                 value={form.password}
-                onChange={e => setForm({...form, password: e.target.value})}
+                onChange={e => setForm({ ...form, password: e.target.value })}
                 placeholder="••••••••"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-amalfi transition"
                 required
@@ -79,7 +82,7 @@ export default function Login() {
           </form>
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-6">Inoverse Technologies © 2025</p>
+        <p className="text-center text-xs text-gray-400 mt-6">Inoverse Technologies © 2026</p>
       </div>
     </div>
   )

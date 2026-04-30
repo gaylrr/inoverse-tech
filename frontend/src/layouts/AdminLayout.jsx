@@ -5,12 +5,13 @@ import { hideToast } from '../store/slices/toastSlice'
 import Toast from '../components/Toast'
 
 const navItems = [
-  { name: 'Dashboard', path: '/admin/dashboard', icon: '▦' },
-  { name: 'Services', path: '/admin/services', icon: '⚙' },
-  { name: 'Projects', path: '/admin/projects', icon: '📁' },
-  { name: 'Messages', path: '/admin/messages', icon: '✉' },
-  { name: 'Content', path: '/admin/content', icon: '📝' },
-  { name: 'Archive', path: '/admin/archive', icon: '🗄' },
+  { name: 'Dashboard',    path: '/admin/dashboard',    icon: '▦' },
+  { name: 'Services',     path: '/admin/services',     icon: '⚙' },
+  { name: 'Projects',     path: '/admin/projects',     icon: '📁' },
+  { name: 'Technologies', path: '/admin/technologies', icon: '💻' },
+  { name: 'Messages',     path: '/admin/messages',     icon: '✉' },
+  { name: 'Content',      path: '/admin/content',      icon: '📝' },
+  { name: 'Archive',      path: '/admin/archive',      icon: '🗄' },
 ]
 
 export default function AdminLayout() {
@@ -35,7 +36,11 @@ export default function AdminLayout() {
         <div className="p-5 flex items-center justify-between border-b border-gray-100">
           {!collapsed && (
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-amalfi flex items-center justify-center text-white text-xs font-bold">IT</div>
+              <img
+                src="/logo.png"
+                alt="Inoverse Technologies"
+                className="h-10 w-auto object-contain"
+              />
               <span className="text-amalfi font-bold text-sm">Inoverse <span className="text-citrus">CMS</span></span>
             </div>
           )}
