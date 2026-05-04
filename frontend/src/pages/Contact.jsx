@@ -112,12 +112,12 @@ export default function Contact() {
             >
               Got an<br />
               <span className="text-citrus">idea?</span><br />
-              <span className="text-breeze/60 text-3xl md:text-4xl font-bold">Let's build it.</span>
+              <span className="text-3xl md:text-4xl font-bold text-white">Let's build it.</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 6, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-breeze text-lg max-w-xl leading-relaxed"
             >
@@ -141,7 +141,7 @@ export default function Contact() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="px-8 py-8"
               >
-                <p className="text-white/60 text-xs font-black uppercase tracking-widest mb-1">{item.tag}</p>
+                <p className="text-l text-amalfi font-white font-black uppercase tracking-widest mb-1">{item.tag}</p>
                 <p className="text-white font-bold text-sm mb-1">{item.label}</p>
                 {item.href ? (
                   <a href={item.href} className="text-white font-black text-lg hover:opacity-80 transition">
@@ -250,8 +250,8 @@ export default function Contact() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                   >
-                    <p className="text-citrus font-black text-xs uppercase tracking-widest mb-2">Get In Touch</p>
-                    <h3 className="text-3xl font-black text-amalfi mb-8 leading-tight">
+                    <p className="text-amalfi font-black text-l uppercase tracking-widest mb-2">Get In Touch</p>
+                    <h3 className="text-3xl font-black text-citrus mb-8 leading-tight">
                       Send us a<br />message.
                     </h3>
 
