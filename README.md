@@ -1,12 +1,6 @@
-# Inoverse Technologies — Company Website
+[# Inoverse Technologies — Company Website
 
 A professional full-stack company website for **Inoverse Technologies**, a software engineering company specializing in custom systems development. Built with React JS, Node.js, Express.js, and MySQL.
-
----
-
-## 🚀 Live Demo
-
-> _Optional: Add your deployed link here_
 
 ---
 
@@ -372,4 +366,4 @@ Password: Admin@1234
 ## 📄 License
 
 This project was developed as a final project for On-the-job Training.
-All rights reserved © 2026 Inoverse Technologies.
+All rights reserved © 2026 Inoverse Technologies.](https://github.com/gaylrr/inoverse-tech.git)
