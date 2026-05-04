@@ -33,10 +33,11 @@ export default function Navbar() {
                 className="h-9 w-auto object-contain drop-shadow-sm"
               />
             </div>
-          </Link>
-          <span className="text-white font-bold text-lg">
+            <span className="text-white font-bold text-lg">
             Inoverse <span className="text-citrus">Technologies</span>
           </span>
+          </Link>
+          
         
 
         {/* Desktop links */}

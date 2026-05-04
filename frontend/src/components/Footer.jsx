@@ -10,7 +10,27 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+              <Link to="/" className="flex items-center gap-2">
+          
+            <div
+              className="px-4 py-2 rounded-2xl bg-white"
+              style={{
+                boxShadow: '0 4px 6px -1px rgba(0,0,0,0.3), 0 8px 24px rgba(255,166,43,0.25), 0 -1px 0 rgba(255,255,255,0.8) inset',
+                border: '1px solid rgba(255,255,255,0.9)',
+              }}
+            >
+              <img
+                src="/logo.png"
+                alt="Inoverse Technologies"
+                className="h-9 w-auto object-contain drop-shadow-sm"
+              />
+            </div>
+            <span className="text-white font-bold text-lg">
+            Inoverse <span className="text-citrus">Technologies</span>
+          </span>
+          </Link>
+          </div>
+            {/* <div className="flex items-center gap-2 mb-4">
               <img
                 src="/logo.png"
                 alt="Inoverse Technologies"
@@ -23,7 +43,7 @@ export default function Footer() {
             <p className="text-breeze text-sm leading-relaxed">
               Building smart software for modern businesses. We specialize in custom systems development and scalable web applications.
             </p>
-          </div>
+          </div> */}
 
           {/* Quick links */}
           <div>
